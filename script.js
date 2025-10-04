@@ -16,6 +16,7 @@ const fetchResults = async (targetLocation) =>{
 
     const res = await fetch(url);
     const data = await res.json();
+    console.log(data);
 
     let locationName = data.location.name;
     let time = data.location.localtime;
